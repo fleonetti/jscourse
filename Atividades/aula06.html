@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- operador vírgula 
+    
+    //opção 1
+    var a, b= 2, c;
+    function myFunc() {
+        var x = 0;
+        return (x +=1, x);
+        //return ++x;
+    }
+
+    myFunc();
+    1 
+
+    //opção 2 - melhor
+    function myFunc3() {
+        var x = 0;
+        return ++x;
+    }
+
+    undefined
+    myFunc3();
+    1
+
+
+    function myFunc2() {
+        var a = 1, b = 2, c = 3;
+        return [a,b,c];
+    }
+
+    undefined
+    myFunc2();
+    //3 indices
+    (3) [1, 2, 3]
+
+
+    <!-- Estururas Condicionais SWITCH 
+    
+    function myFunc(x) {
+      switch(x) {
+        case 1:
+        console.log("x é 1");
+        break;
+        case 2:
+        console.log("x é 2");
+        default:
+        console.log("x não é nem 1 nem 2");
+      }
+    }
+    //sem passar parametro
+    myFunc();
+    x não é nem 1 nem 2
+    
+    //passando 1
+    myFunc(1);
+    x é 1
+    
+    ERRO - aconteceu por não ter colocado o break no case 2:
+    //passando 2
+    myFunc(2);
+    x é 2
+    x não é nem 1 nem 2
+
+    Correto
+
+    function myFunc(x) {
+      switch(x) {
+        case 1:
+        console.log("x é 1");
+        break;
+        case 2:
+        console.log("x é 2");
+		break; //correto
+        default:
+        console.log("x não é nem 1 nem 2");
+      }
+    }
+
+    myFunc();
+    x não é nem 1 nem 2
+    
+    myFunc(1);
+    x é 1
+    
+    myFunc(2);
+    x é 2
+
+
+    Estrutura de Repetição (LOOP / While)
+
+    
+
+    var counter = 0;
+
+    //while passa como parametro uma expressao, ele avalia a expressao se fortrue ele vai entrar na conição e vai executar e sor false ele vai ignovar a expressão.
+
+    //counter é menor que 10? True
+    imprime e soma um valor e depois volta para o inicio voltando a estrução até ser verdadeiro, se for false ele sai da estrução.
+
+    while (counter < 10) {
+      console.log(counter);
+      counter++;
+    }
+
+    while (counter < 10) {
+        console.log(counter);
+        counter++;
+    }
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    9
+
+    === counter regressivo ===
+
+    // o counter é maior que 0? 10 > 0? True, faz loop...
+    while (counter > 0) {
+    //poss decremento --
+      console.log(counter--);
+    }
+    10
+    9
+    8
+    7
+    6
+    5
+    4
+    3
+    2
+    1
+
+    while (counter--) {
+        console.log(counter);
+    }
+    
+    // já está diminuindo o valor
+    while (counter--) {
+      console.log(counter);
+    }
+    9
+    8
+    7
+    6
+    5
+    4
+    3
+    2
+    1
+    0
+
+    -->
+    
+
+    
+</body>
+</html>

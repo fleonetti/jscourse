@@ -1,0 +1,178 @@
+<!--
+    
+    Funções
+
+    //não fazer desta forma
+    var func = function() {
+    }
+
+    //atribuindo a função a uma variável
+    sempre nomear as funções
+    var func = function func() {
+    }
+
+    func(); //envocando uma função
+    func.name; //quando não envoco uma função ela é um objeto
+    func.name // este caso é objeto.propriedade!
+
+    function myFunction2 () {
+      return "retornando";
+    }
+
+    myFunction2();
+    'retornando'
+
+    myFunction2.name
+    'myFunction2'
+
+    //Vantagens!
+    mais facil debugar consegue 
+    Consegue obter o nome func.name
+
+
+    <!-- Programação Funcional 
+
+    Uma forma de programa baseado em funções.
+
+    == Objetos de primeira classe ==
+    As funções tem o mesmo tratamento de objetos.
+
+    Como você consegue usar objetos literal
+
+    var car = {
+        brand: "chevrolet",
+        model: "Silverado"
+    };
+
+    Função literal
+
+    function sum (x,y) {
+      return x + y;
+    }
+    sum(5,5) 
+    10//
+
+    == Retornando objetos em uma função.==
+
+    -Opção 1-
+    function person () {
+        // retornando um objeto
+        return { 
+          name: "Fernando",
+          lastName: "Seleghini"
+        }
+    }
+
+    console.log(person());
+
+    -Opção 2-
+    function person () {
+        // criando o objeto info
+        var info = { 
+          name: "Fernando",
+          lastName: "Seleghini"
+        }
+        //retornando o objeto a partir dela
+        return info;
+    }
+
+    //para o retorno dos objetos a função precisa ser invocada.
+    console.log(person().name);
+    console.log(person().lastName);
+
+
+    == Retornando funções diretamente de funções ==
+
+    // criando uma função que recebe um parametro
+    function adder (x) {
+        // o retorno  será uma  segunda função
+        return function (y) {
+        //o returno da segunda função será o x e o y
+        return x + y
+        }
+    }
+
+    // criando uma função que recebe um parametro
+    function adder (x) {
+        // o retorno  será uma  segunda função
+        function addOther (y) {
+        o returno da segunda função será o x e o y
+            return x + y
+        }
+        return addOther;
+    }
+
+
+    function adder(x) {
+        return function(y) {
+	    return x + y;
+        };
+    };
+
+    var add2 = adder(2);
+
+    console.log(add2(3)); //5
+    console.log(adder(5)(8)); //13
+    
+    function adder(x) {
+        return function(y) {
+	    return x + y;
+        };
+    };
+    console.log(adder(5)(8)); //13
+
+
+    == Como passar objetos por parâmetros!!! ==
+
+    var car  = {
+      color: "yellow"
+    }
+
+    function getCarColor(mycar){
+      return mycar.color;
+    }
+
+    console.log(getCarColor(car));
+    //yellow
+
+
+    == Como passar funções por parâmetros!!! ==
+
+    ==Opção 1
+
+    function showOtherFunction(func) {
+    // o retorno executada
+      return func();
+    }
+
+    function returnedFunction() {
+        return "Returned function";
+    }
+
+    console.log(showOtherFunction(returnedFunction));
+
+    ==Opção 2
+
+    function returnedFunction() {
+        return "Returned function";
+    }
+
+    console.log( showOtherFunction (function() {
+      return "Functional JS Ninja";
+    }));
+
+
+    function returnedFunction() {
+        return "Returned function";
+    }
+
+    console.log( showOtherFunction (function() {
+      return "Functional JS Ninja";
+    }));
+    //Functional JS Ninja
+
+
+
+
+
+ -->

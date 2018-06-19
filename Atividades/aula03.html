@@ -1,0 +1,142 @@
+<!-- 
+    Tipos de Objetos
+     utilizada chaves {}
+    { propriedade: "valor"}
+
+    Node
+    > {propriedade: "valor"}
+    { propriedade: 'valor' }
+    >
+
+    > var objeto = {propriedade: "valor", propriedade2: 10, propriedad3: true};
+    undefined
+    > objeto
+    { propriedade: 'valor', propriedade2: 10, propriedad3: true }
+    >
+
+    > objeto.propriedade;
+    'valor'
+    >
+
+    var pessoa = {
+      nome: "Fernando",
+      idade: 30,
+      peso: 85,
+      altura: 1.85
+   }
+
+    pessoa.nome;
+    "Fernando"
+    pessoa.idade;
+    30
+    pessoa.peso;
+    85
+    pessoa.altura;
+    1.85
+
+    var carro = {
+    cor: "vermelho",
+    motor: "2.0",
+    portas: 4
+    }
+
+    carro.cor;
+    "vermelho"
+    carro.motor;
+    "2.0"
+    carro.portas
+    4
+
+    envocar uma função e retorna o valor da função 
+
+    > var myvar = function (){return "variável myvar;" }
+      undefined
+    > myvar;
+    [Function: myvar]
+
+    > myvar();
+    'variável myvar;'
+     >
+
+    Utilização do obejto js para ordedar seus códigos
+
+    Atrubuindo uma nova proporiedade por ex: pessoa.cor recebe nova propriedade e valor
+
+> pessoa.cor = "branco";
+'branco'
+> pessoa
+{ nome: 'Fernando',
+  idade: 35,
+  peso: 83,
+  altura: 1.77,
+  cor: 'branco' }
+
+  Meteodos de Objeto podem ter ações que atribuem algo
+
+  > pessoa
+ { nome: 'Fernando',
+  idade: 35,
+  peso: 83,
+  altura: 1.77,
+  cor: 'branco',
+  andar: [Function] }
+  envocar a função andar();
+> pessoa.andar();
+'Pessoa andando'
+>
+
+//dentro do metodo imcrementa o valor idade na propriedade pessoa.
+> pessoa.aniversario = function() {
+... pessoa.idade++;
+... }
+[Function]
+> pessoa
+{ nome: 'Fernando',
+  idade: 35,
+  peso: 83,
+  altura: 1.77,
+  cor: 'branco',
+  andar: [Function],
+  aniversario: [Function] }
+> pessoa.aniversario();
+undefined
+
+> pessoa
+{ nome: 'Fernando',
+  idade: 36,
+  peso: 83,
+  altura: 1.77,
+  cor: 'branco',
+  andar: [Function],
+  aniversario: [Function] }
+>
+
+> pessoa
+{ nome: 'Fernando',
+  idade: 36,
+  peso: 83,
+  altura: 1.77,
+  cor: 'branco',
+  andar: [Function],
+  aniversario: [Function],
+  sobrenome: 'Leonetti',
+  nomeCompleto: [Function] }
+> pessoa.nomeCompleto();
+'Fernando Leonetti'
+>
+
+=== Métodos de objeto ====
+
+ São funções que usa como valor da propriedade do objeto
+
+ pessoa.nome (proppriedade)
+
+ pessoa.andar(); retorna o andar é um método que retorna o objeto pessoa.
+
+ objeto.propriedade
+
+ function () {} função é quando eu cria fora de um objeto
+
+ Se a função é criada dentro de um objeto é chamado de método();
+
+ -->

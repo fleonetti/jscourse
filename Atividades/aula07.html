@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Operador Módulo %
+    
+    Retorna o resto de divisão (inteiro)
+    
+    //divisão
+    3/3
+    1
+
+    4/2
+    2
+
+    5/2
+    2.5
+
+    //resto da divisão
+    5%2
+    1
+
+    4%2
+    0
+    
+    3%2
+    1    
+
+    var num = 0;
+        while (num <= 20) {
+        console.log(num++);
+    }   
+
+    //Com erro
+    //o incremento vindo antes da disião ele já inicia com 1 fazendo com que pege só impares.
+    while(num <= 20) {
+        (num++) % 2 === 0 ? console.log(num) : "";
+    }
+
+    1
+    3
+    5
+    7
+    9
+    11
+    13
+    15
+    17
+    19
+    21
+
+    //num menor igual a vinte
+    //num for divide por 2 === 0 
+
+    while (num <=20) {
+        num % 2 === 0 ? console.log(num) : "";
+        num++;
+    }
+    0
+    2
+    4
+    6
+    8
+    10
+    12
+    14
+    16
+    18
+    20
+    20
+
+    Arrays (são objetos disfarçados!)
+    e tem propriedades e metodos!!!
+
+    o length = ele conta a quantidade de itens que está no array
+
+    var arr = ["Fernando", null, true, {bola: "azul"}, function() {}];
+
+    arr
+    (5) ["Fernando", null, true, {…}, ƒ]
+    arr.length;
+    5
+
+    arr[0];
+    "Fernando"
+
+    arr[1];
+    null
+
+    arr[2];
+    true
+
+    arr[3];
+    {bola: "azul"}
+
+    arr[4];
+    ƒ () {}
+    
+    var qtd  = arr.length;
+    undefined
+    qtd
+    5
+
+    while (qtd >= 0) {
+        //aplicando o pre-encremento
+        console.log(arr [--qtd]);
+    }
+    ƒ () {}
+    {bola: "azul"}
+    true
+    null
+    Fernando
+
+    //qtd recebe a quantidade de itens do array
+    qtd = arr.length;
+    5
+    while (qtd > 0) {
+    console.log(arr [--qtd]);
+    }
+
+    ƒ () {}
+    {bola: "azul"}
+    true
+    null
+    Fernando
+
+    qtd = arr.length;
+     5
+
+    arr;
+    (5) ["Fernando", null, true, {…}, ƒ]
+
+    while(qtd > 0) {
+        //vai imprimir todas os itens do array com pre incremento
+        console.log(arr [--qtd]);
+        //se a quantidade for igual ao indice 3, vai exibir um console.log no array no qtd.bola (pegar todos os array e quando chegart no 3 irá retornar o valor da propriedade bola dos itens do array.) 
+        if (qtd === 3) {
+            console.log(arr [qtd].bola);
+        }
+    }
+
+    while(qtd > 0) {
+        console.log(arr [--qtd]);
+        if(qtd === 3) {
+            console.log(arr [ qtd ].bola);   
+	    }    
+    }
+
+    ƒ () {}
+    {bola: "azul"}
+    azul //  retorno do valor da propriedade bola:
+    true
+    null
+    Fernando
+
+
+    Metodo .push() do array
+
+    var arr = [1, 2, 3, "Fernando", {bola: "azul"}];
+
+    arr
+    (5) [1, 2, 3, "Fernando", {…}]
+
+    arr.length;
+    5
+
+    arr[0];
+    1
+    arr[1];
+    2
+    arr[2];
+    3
+    arr[3];
+    "Fernando"
+    arr[4];
+    {bola: "azul"}
+    //array indice 4 que retorna o valor bola do objeto.
+    arr[4].bola
+    "azul"
+
+    adicionar/empurrar um item novo para o array
+    arr.push
+
+    arr.push("Leonetti");
+    6
+    
+    // inserir um function que recebe 2 parametros e returna uma soma
+    arr.push( function soma (x,y) { return x + y; });
+    7
+    //passando o indice e invocando a função de soma para o metodo push. 
+    arr[6](1,2);
+    3
+
+    === Estrutura de repetição FOR ===
+
+    for (init, condition, final expression)
+
+    for( var num = 0; num < 20; num++) {
+        console.log(num);
+    }
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+
+    for( var num = 2, arroz = 3; num < 5; num++, arroz++) {
+        console.log(num);
+        console.log(arroz);
+    }
+    2
+    3
+    3
+    4
+    4
+    5
+
+    -->
+
+</body>
+</html>

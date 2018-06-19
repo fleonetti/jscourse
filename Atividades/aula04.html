@@ -1,0 +1,134 @@
+<!-- 
+    Valor Truthy é representável por TRUE
+
+    Valor Falsy é representável por FALSE
+
+    EX:
+
+    TRUTHY
+
+    if (1) { // o 1 retorna true
+    ... teste = true;
+    ... } else {
+    ... teste = false;
+    ... }
+    true
+
+    if ("0") {teste = true;} else {teste = false;}
+    true
+
+    FALSY (undefined , null, NaN, 0, -0, strings vazias "" ou '')
+
+     if(0) {teste = true;} else {teste = false;}
+    false
+
+
+    Descobrir a representação booleana !!
+
+    ! = um sinal de exclamação ele converte para booleano e inverte valor
+
+    !! = um sinal de exclamação ele converte para booleano e inverte valor e depois ele converte e inverte novamente.
+    
+    Ex: 
+    !!0
+    false
+
+    !!"Fernando"
+    true
+
+    === Condicional Ternário ===
+
+    condicional ternario seria em substituir o if de um condição   
+
+    condicao ? true : false;
+    
+    usado para instruções pequenas
+
+    EX:
+    1 === 2 ? true : false;
+    false
+    2 === 2 ? true : false;
+    true
+
+    var sexo = pessoa.sexo === "Feminino" ? "a" : "o";
+
+    pessoa
+    { sexo: 'Feminino' }
+    var sexo = pessoa.sexo === "Feminino" ? "a" : "o";
+    undefined
+    sexo
+    'a'
+
+    var carro = "string" ? "2 portas" : "4 portas";
+    undefined
+    carro
+    '2 portas'
+
+    var carro = 0 ? "2 portas" : "4 portas";
+    undefined
+    carro
+    '4 portas'
+
+    === Escopo de Variáveis ===
+
+    2 tipos de escopo
+    Local aonde eu declaro uma variável fora de função.
+    GLOBAL // não recomendado
+
+    EX:
+
+    > var myvar = 1;
+    undefined
+    > myvar
+    1
+    > function myvarfunc () {
+    ... return myvar;
+    ... }
+    undefined
+    > myvarfunc();
+    1
+
+    Se eu declaro dentro de uma função(){} a declaração  
+    LOCAL
+
+    > otherVar;
+    ReferenceError: otherVar is not defined
+
+    > myvarfunc();
+    1
+
+    > function otherFunction () {
+    ... var otherVar = true;
+    ... return otherVar;
+    ... }
+    undefined
+    
+    otherVar();
+    ReferenceError: otherVar is not defined
+    > otherFunction();
+    true
+
+    Vantagens de Variavel LOCAL
+
+    garbage colector
+    remove a variável, funções, objetos, etc... se não form mais utilizar.
+    
+    Quando for criar uma variavel sempre use var = com o escopo local
+
+    Argumentos de função também é aplicado ao escopo LOCAL
+
+    EX:
+    function outraFuncao (a,b,c) {
+...     return a;
+... }
+    undefined
+    outraFuncao(1);
+    1
+    outraFuncao(1,2);
+    1
+    
+    Não consegue acessar argumentos fora de função
+    > a
+    ReferenceError: a is not defined
+ -->
+
