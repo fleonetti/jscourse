@@ -50,4 +50,4 @@ console.log(name);
     }
 
     var constructor = new MyConstructor();
-})();
+})(); 
