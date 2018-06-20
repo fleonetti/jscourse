@@ -57,7 +57,7 @@ console.log(name);
   console.log("MyConstructor", constructor);
 })();
 
-/////////// Objeto arguments ///////////
+/////////// Objeto Arguments ///////////
 
 //Ele funciona como se fosse um array, ele aparece sempre dentro de funções
 
