@@ -62,10 +62,10 @@ console.log(name);
 //Ele funciona como se fosse um array, ele aparece sempre dentro de funções
 
 (function() {
-  function myfunction() {
+  function Myfunction() {
     return arguments;
   }
 
   console.log(Myfunction(1, 2));
-  
+
 })();
