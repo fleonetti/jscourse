@@ -85,4 +85,64 @@
 })();
 
 //prototype
+// é o prototipo de métodos e construtores e a partir do prototype podemos extender os objetos criando herança
+
+var obj = {}
+undefined
+obj
+{} Object
+
+
+(function () {
+    function MyFunction (name, lastName) {
+        this.name = name;
+        this.lastName = lastName;
+        this.age = 34; // dar prioridade na propriedade da função
+    }
+
+    MyFunction.prototype.fullName = function() {
+        return `${this.name} ${this.lastName}`;
+    }
+
+    //criando novas proprierdades depois que instancia objetos
+    MyFunction.prototype.age = 20; // default
+
+    var fernando = new MyFunction('Fernando', 'Leonetti');
+
+    console.log(fernando.fullName());
+    //Fernando Leonetti
+
+    console.log(fernando.age);
+    //30
+   
+})();
+
+////////// Array-Like //////////
+
+(function() {
+    function myFunction() {
+        Array.prototype.forEach.call(arguments, function(item, index) {
+            console.log(item);
+    });
+}
+    myFunction(1,2,3,4,5,6,7,8);    
+
+    //PErcorre o Array com .forEach
+    // 1
+    // 2
+    // 3
+    // 4
+    // 5
+    // 6
+    // 7
+    // 8
+   
+})();
+
+
+////////// .editorconfig //////////
+
+// https://editorconfig.org/
+
+
 
